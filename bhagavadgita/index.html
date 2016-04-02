@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bhagavadgita audio discourses by Swami Nikhilananda.">
+    <title>Bhagavadgita Discourse by Swami Nikhilananda</title>
+    <link rel="stylesheet" href="/css/pure.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="/skins/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="/js/jplayer.playlist.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $.getJSON("playlist.json", function(playlists) {
+                var playlistControls = $("#playlistControls").html();
+                $("div.chapter").each(function() {
+                    var id = $(this).attr("id");
+                    var temp = $("<div/>");
+                    $("<div/>", {
+                        "id" : "jquery_jplayer_" + id,
+                        "class" : "jp-jplayer"
+                    }).appendTo(temp);
+                    $("<div/>", {
+                        "id" : "jp_container_" + id,
+                        "class" : "jp-audio",
+                        "role" : "application",
+                        "aria-label" : "media player"
+                    }).html(playlistControls).appendTo(temp);
+                    $(this).append(temp.html());
+                    var playerId = "#jquery_jplayer_" + id;
+                    var containerId = "#jp_container_" + id;
+                    var playlist = playlists[id];
+
+                    new jPlayerPlaylist({
+                        jPlayer : playerId,
+                        cssSelectorAncestor : containerId
+                    }, playlist, {
+                        swfPath : "/js",
+                        supplied : "mp3",
+                        useStateClassSkin: true,
+                        autoBlur: false,
+                        smoothPlayBar: true,
+                        keyEnabled: true,
+                        preload : "none"
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">Bhagavadgita</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#chapter01" class="pure-menu-link">Chapter 1</a></li>
+                <li class="pure-menu-item"><a href="#chapter02" class="pure-menu-link">Chapter 2</a></li>
+                <li class="pure-menu-item"><a href="#chapter03" class="pure-menu-link">Chapter 3</a></li>
+                <li class="pure-menu-item"><a href="#chapter04" class="pure-menu-link">Chapter 4</a></li>
+                <li class="pure-menu-item"><a href="#chapter05" class="pure-menu-link">Chapter 5</a></li>
+                <li class="pure-menu-item"><a href="#chapter06" class="pure-menu-link">Chapter 6</a></li>
+                <li class="pure-menu-item"><a href="#chapter07" class="pure-menu-link">Chapter 7</a></li>
+                <li class="pure-menu-item"><a href="#chapter08" class="pure-menu-link">Chapter 8</a></li>
+                <li class="pure-menu-item"><a href="#chapter09" class="pure-menu-link">Chapter 9</a></li>
+                <li class="pure-menu-item"><a href="#chapter10" class="pure-menu-link">Chapter 10</a></li>
+                <li class="pure-menu-item"><a href="#chapter11" class="pure-menu-link">Chapter 11</a></li>
+                <li class="pure-menu-item"><a href="#chapter12" class="pure-menu-link">Chapter 12</a></li>
+                <li class="pure-menu-item"><a href="#chapter13" class="pure-menu-link">Chapter 13</a></li>
+                <li class="pure-menu-item"><a href="#chapter14" class="pure-menu-link">Chapter 14</a></li>
+                <li class="pure-menu-item"><a href="#chapter15" class="pure-menu-link">Chapter 15</a></li>
+                <li class="pure-menu-item"><a href="#chapter16" class="pure-menu-link">Chapter 16</a></li>
+                <li class="pure-menu-item"><a href="#chapter17" class="pure-menu-link">Chapter 17</a></li>
+                <li class="pure-menu-item"><a href="#chapter18" class="pure-menu-link">Chapter 18</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Bhagavadgita Discourse By Swami Nikhilananda</h1>
+        </div>
+
+        <div class="content">
+            <img class="pure-img-responsive img-left" src="bhagavadgita.jpg" alt="Bhagavadgita Image"/>
+            <img class="pure-img-responsive img-right" src="swami_nikhilananda.jpg" alt="Bhagavadgita Image"/>
+
+            <p> The  <a href="http://en.wikipedia.org/wiki/Bhagavad_Gita">Bhagavad-Gita</a> is the eternal message of spiritual wisdom from ancient India. Always being revered as a true source of spiritual knowledge it reveals the purpose and goal of human existence.</p>
+
+            <p><a href="http://www.chinmayamissiondelhi.org/acharya.asp">Swami Nikhilananda Saraswati</a> is the Regional Head of Chinmaya Mission Delhi. A born teacher, logical and systematic, he opens the doors for understanding the Truth, as it is, reaching seekers at their own levels. Swami Nikhilananda is also featured in <a href="http://www.speakingtree.in/swami.nikhilananda">Speaking Tree</a> where you can find <a href="http://www.speakingtree.in/swami.nikhilananda/videos">videos</a> of these Bhagavadgita discourses. The discourses were given in English from March 2010 to December 2011 at Chinmaya Mission Delhi.</p>
+
+            <p>The effort of this website is to make these valuable discourses available to everyone. You can listen to them direclty by using the audio player embedded in the website.</p>
+
+            <p>You can also listen to these discourses on your mobile through podcasts. For Android devices install <b>AntennaPod Podcast Player</b> or any equivalent. For iPhone, you can install <b>Podcasts</b> app. Then search for <b>Bhagavadgita Nikhilananda</b> within the app to obtain this podcast. You can discuss about this discourse at <a href="http://www.facebook.com/BhagavadgitaDiscourseBySwamiNikhilananda">Facebook Page</a>.</p>
+
+            <div class="chapter" id="chapter01">
+                <h2>Chapter 1 - Cause of Grief</h2>
+                <p>
+                A panoramic view of the battlefield - Arjuna's confusion, intense sorrow, loss of discrimination, false vairagya and justification for not fighting the war are depicted. <a href="chapter01.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a> <a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82bIEOP_eb7MuRvllgTMp2uC"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter"  id="chapter02">
+                <h2>Chapter 2 - On Self Realisation</h2>
+                <p>
+                    An overview of the Bhagavad Gita - The goal and the means are explained enabling us to look at life as a whole and lead a whole life.<a href="chapter02.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a> <a href="http://www.youtube.com/watch?v=5cxJSziji0w&list=PLIIfJ7lmq82Z_x5QEoMLwn0skoDt-nreZ"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+
+                </p>
+            </div>
+
+            <div class="chapter"  id="chapter03">
+                <h2>Chapter 3 - Work as Worship</h2>
+                <p>
+                    Sri Krishna shows us the importance of right actions performed in a spirit of yagna to reach the state of enlightenment. <a href="chapter03.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82aCp0qquaoOjWJHJyicc7vw"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter04">
+                <h2>Chapter 4 - Spiritual Practices</h2>
+                <p>
+                    The nature of Avatara, the various spiritual practices and the importance of Knowledge is revealed.<a href="chapter04.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82Z7O3Jnip-EOt4WjkaJyfx9"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter05">
+            <h2>Chapter 5 - Renunciation in Action</h2>
+
+                <p>
+                    The link between Karma, Jnana and Dhyana is established. Attention focuses on how to gain the knowledge and experience of the Self.<a href="chapter05.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82ZbN4tSEGTOJQhLlNEcFk1_"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter06">
+            <h2>Chapter 6 - On Meditation</h2>
+
+                <p>
+                    The zenith of spiritual practices lies in dhyana or meditation, bringing the seeker to the final goal of Self Realisation.<a href="chapter06.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82Y6h4Ls_XCcQs6_DYUn7QsK"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter07">
+            <h2>Chapter 7 - On Knowledge and Wisdom</h2>
+
+                <p>
+                    Sri Krishna reveals His nature as God, the one Supreme Reality and shows the path to God-Realisation.<a href="chapter07.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82adYqSzCF77rPTimkI1A_KU"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter08">
+            <h2>Chapter 8 - On Life and Afterlife</h2>
+
+                <p>
+                    Sri Krishna continues to reveal His nature, answering and clarifying Arjuna's questions. He unfolds the path to experience Him at the time of death.<a href="chapter08.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82YihzGgCBc1CX7_TYxCyDZz"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter09">
+            <h2>Chapter 9 - On Devotion</h2>
+
+                <p>
+                    The nature of God and simplicity of the path of Bhakti are shown.<a href="chapter09.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82YUiWKbFteqD7nk-Rqg29LL"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter10">
+            <h2>Chapter 10 - God is in All</h2>
+
+                <p>
+                    Here, the indicators to directly experience and know God are unfolded.<a href="chapter10.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82Y6t8GbAadjYalziqELRvw_"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+            <div class="chapter" id="chapter11">
+            <h2>Chapter 11 - All are in God</h2>
+
+                <p>
+                    Sri Krishna shows his universal form or Vishwarupa to Arjuna.<a href="chapter11.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82ZGlhWZdSwNsa3CDeFR7SBw"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter12">
+            <h2>Chapter 12 - Who is a devotee</h2>
+
+                <p>
+                    The path of Bhakti and the characteristics and qualities natural to a true devotee are revealed.<a href="chapter12.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82YZJ753000SHmaYpGafVX3l"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter13">
+            <h2>Chapter 13 - Nature of the Seer and the Seen</h2>
+
+                <p>
+                    Purusha as the Seer and prakriti as the seen are explained. The recognition of and abidance as the Seer is liberation.<a href="chapter13.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82bh93d30zxyGqF1FMSl095d"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter14">
+            <h2>Chapter 14 - Moods of the Mind</h2>
+
+                <p>
+                    Sattva, Rajas and Tamas, the three-fold qualities of prakriti seemingly bind the Purusha. The path to Enlightenment is by transcending these qualities.<a href="chapter14.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82bW9CCdj5KKTMl61Fzfrm6V"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter15">
+            <h2>Chapter 15 - The Cosmic Tree</h2>
+
+                <p>
+                    Nature of the Self is revealed via the metaphor of an inverted Banyan tree.<a href="chapter15.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82bnA9fuoRsSgvjSzjH0Ba0R"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter16">
+            <h2>Chapter 16 - On Good and Evil</h2>
+
+                <p>
+                    The positive and negative qualities of the mind are explained. The positive qualities need cultivation and the negative need to be recognised and negated.<a href="chapter16.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82ZG3SvFIDCWOvISiR7z9Fwp"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter17">
+            <h2>Chapter 17 - On Faith</h2>
+
+                <p>
+                    The different attitudes to faith and types of faith are explained. The science of sadhana or practise leading to Enlightenment is revealed.<a href="chapter17.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82Yz-Kz0J4v9V9AXo5DHgbLV"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+
+            <div class="chapter" id="chapter18">
+            <h2>Chapter 18 - Essence of the Gita</h2>
+
+                <p>
+                    Sri Krishna summarises the essential teaching of the entire Gita.<a href="chapter18.xml"><img src="/images/download.png" width="20" height="20" class="download" title="Download" alt="Download"/></a><a href="http://www.youtube.com/playlist?list=PLIIfJ7lmq82ZEQD4pvCTwT8wSUouVO2EM"><img src="/images/play.png" width="20" height="20" class="play" title="Video on YouTube" alt="YouTube"/></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <p style="clear:both;"> Any feedback on this page, please drop a mail to <img src="/images/emailid.png"/>.</p>
+</div>
+<div id="playlistControls" style="display:none;">
+    <div class="jp-type-playlist">
+        <div class="jp-gui jp-interface">
+            <div class="jp-controls">
+                <button class="jp-previous" role="button" tabindex="0">previous</button>
+                <button class="jp-play" role="button" tabindex="0">play</button>
+                <button class="jp-next" role="button" tabindex="0">next</button>
+                <button class="jp-stop" role="button" tabindex="0">stop</button>
+            </div>
+            <div class="jp-progress">
+                <div class="jp-seek-bar">
+                    <div class="jp-play-bar"></div>
+                </div>
+            </div>
+            <div class="jp-volume-controls">
+                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                <div class="jp-volume-bar">
+                    <div class="jp-volume-bar-value"></div>
+                </div>
+            </div>
+            <div class="jp-time-holder">
+                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+            </div>
+            <div class="jp-toggles">
+                <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+            </div>
+        </div>
+        <div class="jp-playlist">
+            <ul>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <div class="jp-no-solution">
+            <span>Update Required</span>
+            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-40488171-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<script src="/js/ui.js"></script>
+</body>
+</html>
