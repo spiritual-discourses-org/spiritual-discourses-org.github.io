@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="playlist.xsl"?>
+<playlist>
+    <title>Chapter 5 - Renunciation in Action</title>
+    <creator>Naveen</creator>
+    <link>http://spiritualdiscourses.org/bhagavadgita/index.html</link>
+    <info>Chapter 5 - Renunciation in Action</info>
+    <image>bhagavadgita.jpg</image>
+
+    <trackList>
+
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter05_part01.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 5, Part 1</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter05_part02.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 5, Part 2</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter05_part03.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 5, Part 3</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter05_part04.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 5, Part 4</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter05_part05.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 5, Part 5</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter05_part06.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 5, Part 6</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter05_part07.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 5, Part 7</title>
+          <info></info>
+        </track>
+        
+
+    </trackList>
+</playlist>

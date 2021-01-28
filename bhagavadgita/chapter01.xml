@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="playlist.xsl"?>
+<playlist>
+    <title>Chapter 1 - Cause of Grief</title>
+    <creator>Naveen</creator>
+    <link>http://spiritualdiscourses.org/bhagavadgita/index.html</link>
+    <info>Chapter 1 - Cause of Grief</info>
+    <image>bhagavadgita.jpg</image>
+
+    <trackList>
+
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter01_part01.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 1, Part 1</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter01_part02.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 1, Part 2</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter01_part03.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 1, Part 3</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter01_part04.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 1, Part 4</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter01_part05.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 1, Part 5</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter01_part06.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 1, Part 6</title>
+          <info></info>
+        </track>
+    </trackList>
+</playlist>

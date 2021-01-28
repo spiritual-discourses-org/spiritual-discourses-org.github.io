@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="playlist.xsl"?>
+<playlist>
+    <title>Chapter 15 - The Cosmic Tree</title>
+    <creator>Naveen</creator>
+    <link>http://spiritualdiscourses.org/bhagavadgita/index.html</link>
+    <info>Chapter 15 - The Cosmic Tree</info>
+    <image>bhagavadgita.jpg</image>
+
+    <trackList>
+
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter15_part01.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 15, Part 1</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter15_part02.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 15, Part 2</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter15_part03.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 15, Part 3</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter15_part04.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 15, Part 4</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter15_part05.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 15, Part 5</title>
+          <info></info>
+        </track>
+        <track>
+          <location>https://archive.org/download/Bhagavadgita-SwamiNikhilananda/chapter15_part06.mp3</location>
+          <creator>Swami Nikhilananda</creator>
+          <album>Bhagavadgita Discourse</album>
+          <title>Chapter 15, Part 6</title>
+          <info></info>
+        </track>
+    </trackList>
+</playlist>
